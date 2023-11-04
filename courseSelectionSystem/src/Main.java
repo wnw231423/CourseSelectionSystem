@@ -1,11 +1,10 @@
 import entities.*;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         //初始化专业
         Major sim = new Major("信息管理与信息系统");
         Major cs = new Major("计算机科学与技术");
