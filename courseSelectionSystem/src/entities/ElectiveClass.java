@@ -3,7 +3,7 @@ package entities;
  * 选修课类
  */
 public class ElectiveClass extends Course {
-    private final static int classType = 3;
+    private final static String classType = "选修课";
     /**
      * 默认构造器
      */

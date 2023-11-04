@@ -3,7 +3,7 @@ package entities;
  * 选修课类
  */
 public class RequiredClass extends Course {
-    private final static int classType = 2;
+    private final static String classType = "必修课";
     /**
      * 默认构造器
      */

@@ -3,7 +3,7 @@ package entities;
  * 公共课类
  */
 public class PublicClass extends Course {
-    private final static int classType = 1;
+    private final static String classType = "公共课";
     /**
      * 默认构造器
      */
