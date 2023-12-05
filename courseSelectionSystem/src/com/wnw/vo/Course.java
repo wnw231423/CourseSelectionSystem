@@ -1,19 +1,20 @@
-package entities;
+package com.wnw.vo;
+
 /**
  * 课程类
  */
-public class Course {
+public abstract class Course {
     //课程号
     private int cid;
     //课程名
     private String cname;
     //课程教师
-    private String teacher;
+    private Teacher teacher;
 
     /**
      * 构造器
      */
-    public Course(int cid, String cname, String teacher) {
+    public Course(int cid, String cname, Teacher teacher) {
         this.setId(cid);
         this.setName(cname);
         this.setTeacher(teacher);
@@ -50,15 +51,17 @@ public class Course {
     /**
      * 设置课程教师
      */
-    public void setTeacher(String teacher) {
+    public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
 
     /**
      * 获取课程教师
      */
-    public String getTeacher() {
+    public Teacher getTeacher() {
         return this.teacher;
     }
+
+    public abstract String getType();
 
 }

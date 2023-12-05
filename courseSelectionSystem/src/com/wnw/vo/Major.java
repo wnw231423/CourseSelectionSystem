@@ -1,4 +1,4 @@
-package entities;
+package com.wnw.vo;
 
 import java.util.ArrayList;
 
@@ -39,4 +39,7 @@ public class Major {
         this.students.add(student);
     }
 
+    public String getName() {
+        return mname;
+    }
 }

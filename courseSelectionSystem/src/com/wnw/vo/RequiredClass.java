@@ -1,4 +1,4 @@
-package entities;
+package com.wnw.vo;
 /**
  * 选修课类
  */
@@ -7,7 +7,11 @@ public class RequiredClass extends Course {
     /**
      * 默认构造器
      */
-    public RequiredClass(int cid, String cname, String teacher) {
+    public RequiredClass(int cid, String cname, Teacher teacher) {
         super(cid, cname, teacher);
+    }
+
+    public String getType() {
+        return classType;
     }
 }

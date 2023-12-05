@@ -1,4 +1,4 @@
-package entities;
+package com.wnw.vo;
 
 public class SchoolMember {
     private int id;

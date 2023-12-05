@@ -1,4 +1,4 @@
-package entities;
+package com.wnw.vo;
 
 import java.util.ArrayList;
 

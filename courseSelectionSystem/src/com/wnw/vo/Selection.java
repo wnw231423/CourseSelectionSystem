@@ -1,12 +1,12 @@
-package entities;
+package com.wnw.vo;
 /**
  * 学生选课类
  */
 public class Selection {
     //学生
-    private Student student;
+    private final Student student;
     //课程
-    private Course course;
+    private final Course course;
     /**
      * 默认构造器
      */
@@ -19,6 +19,8 @@ public class Selection {
     public String toString() {
         String sn = this.student.getName();
         String cn = this.course.getName();
-        return sn + "\t" +cn;
+        String ct = this.course.getTeacher().getName();
+        String cl = this.course.getType();
+        return sn + "\t" +cn + "\t" + ct + "\t" + cl;
     }
 }
